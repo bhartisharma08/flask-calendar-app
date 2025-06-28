@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.day {
+    background: #e3ecf8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.day.today {
+    background: #007bff;
+    color: white;
+}
+#reminder-form {
+    margin-top: 30px;
+}
+#reminders-list {
+    margin-top: 20px;
+}
+.reminder {
+    background: #ffeeba;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+button {
+    padding: 8px 12px;
+    margin-left: 10px;
+}

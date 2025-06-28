@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar and Reminder App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calendar and Reminder App</h1>
+        <div id="calendar"></div>
+        <div id="reminder-form">
+            <h2>Add Reminder</h2>
+            <input type="date" id="reminder-date">
+            <input type="text" id="reminder-text" placeholder="Reminder">
+            <button onclick="addReminder()">Add</button>
+        </div>
+        <div id="reminders-list"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
